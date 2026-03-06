@@ -1,35 +1,27 @@
-# EGFR Radiomics — Mini Bootcamp (5 buổi)
+# EGFR Radiomics — Mini Bootcamp 5 buổi
 
-Repository này là website học tập (Jupyter Book) cho học sinh THPT, chạy trên Google Colab.
+Repository này là website học tập dạng Jupyter Book phục vụ nhóm học sinh THPT chuẩn bị dự án EGFR radiomics.
 
-Mục tiêu của chương trình rút gọn:
-- Hiểu luồng phân tích của báo cáo theo đúng 5 bước: mô tả dữ liệu, hiệu năng ML, độ ổn định, NGS delta P, tổng hợp báo cáo bằng code.
-- Mỗi buổi chạy 1 notebook, tạo ra sản phẩm cuối buổi (bảng và hình) để kiểm tra và nộp.
+Mục tiêu của phiên bản 5 buổi:
+- đi đúng flow của báo cáo nghiên cứu
+- giữ phần code ở mức học sinh có thể hiểu và chạy trên Colab
+- mỗi buổi đều có sản phẩm cụ thể sau khi chạy notebook
+- vẫn giữ độ chi tiết của bộ 20 bài, nhưng gói lại theo 5 chặng rõ ràng
 
-Dữ liệu trong khoá là dữ liệu demo, không phải dữ liệu bệnh nhân thật.
+## Cấu trúc học tập
 
-## Cách publish website (GitHub Pages)
-1. Upload repo lên GitHub
-2. Settings → Pages
-3. Source: GitHub Actions
-4. Chờ link website
+1. Day 01 — Descriptive statistics cho cohort 200 bệnh nhân
+2. Day 02 — ML performance: ROC AUC, confusion matrix, so sánh intra và ring
+3. Day 03 — Stability analysis: CV, bootstrap, leakage
+4. Day 04 — NGS pathway delta P: mean, median, p value theo pathway
+5. Day 05 — Capstone: ghép toàn bộ flow, tạo bảng và hình cuối cùng bằng code
 
-## Cấu hình một lần để nút Open in Colab hoạt động
-Sửa file `book/_config.yml` và thay:
-- YOUR_GITHUB_USERNAME
-- YOUR_REPO_NAME
+## Dữ liệu trong repo
 
-Trong các notebook cũng có biến:
-- GITHUB_USER
-- REPO_NAME
+- `data/nsclc_egfr_radiomics_simplified.csv`: cohort demo 200 bệnh nhân
+- `data/ngs_pathway_demo_64.csv`: subset demo 64 bệnh nhân cho phân tích pathway
+- dữ liệu demo được dùng để học luồng code; khi áp dụng dữ liệu thật thì thay file nhưng giữ cùng logic
 
-Cần sửa đúng để notebook tự tải được file CSV demo từ GitHub.
+## Mở website
 
-## Thư mục quan trọng
-- `book/` nội dung website và notebook
-- `book/_static/slides/` slide từng buổi
-- `data/` dữ liệu demo (CSV)
-- `book/_static/data/` dữ liệu demo để website hiển thị
-
-## Lưu ý khi dùng Colab
-Trong mỗi notebook, phần cuối sẽ tạo thư mục `outputs/` và nén thành file zip để tải về.
+Sau khi bật GitHub Pages bằng GitHub Actions, website sẽ có giao diện Jupyter Book và tự có liên kết Previous / Next ở cuối trang.
