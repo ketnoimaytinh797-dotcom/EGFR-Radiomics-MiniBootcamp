@@ -1,0 +1,33 @@
+column,dtype,description
+patient_id,object,Mã bệnh nhân (synthetic ID)
+age,int64,Tuổi (years)
+sex,object,Giới tính sinh học (F/M)
+smoking_status,object,Tình trạng hút thuốc (Never/Former/Current)
+histology,object,Giải phẫu bệnh (Adenocarcinoma/Squamous/Other)
+stage,object,Giai đoạn bệnh (I/II/III/IV - ordinal)
+tumor_size_mm,float64,Kích thước u (mm) - giả lập
+tumor_volume_cm3,float64,Thể tích u ước tính (cm^3) từ size - giả lập
+tp53_mutation,int64,Đột biến TP53 (0/1) - để minh hoạ radiogenomics
+egfr_mutation,int64,Đột biến EGFR (0/1) - biến mục tiêu
+intra_firstorder_meanHU,float64,First-order mean HU (mật độ trung bình) tại ROI
+intra_firstorder_medianHU,float64,First-order median HU (trung vị mật độ) tại ROI
+intra_glcm_inverse_difference,float64,GLCM Inverse Difference (độ đồng nhất texture) tại ROI
+intra_gldm_dependence_nonuniformity,float64,GLDM Dependence NonUniformity (không đồng nhất/heterogeneity) tại ROI
+intra_gldm_large_dependence_emphasis,float64,GLDM Large Dependence Emphasis (vùng phụ thuộc lớn) tại ROI
+ring1_firstorder_meanHU,float64,First-order mean HU (mật độ trung bình) tại ROI
+ring1_firstorder_medianHU,float64,First-order median HU (trung vị mật độ) tại ROI
+ring1_glcm_inverse_difference,float64,GLCM Inverse Difference (độ đồng nhất texture) tại ROI
+ring1_gldm_dependence_nonuniformity,float64,GLDM Dependence NonUniformity (không đồng nhất/heterogeneity) tại ROI
+ring1_gldm_large_dependence_emphasis,float64,GLDM Large Dependence Emphasis (vùng phụ thuộc lớn) tại ROI
+ring3_firstorder_meanHU,float64,First-order mean HU (mật độ trung bình) tại ROI
+ring3_firstorder_medianHU,float64,First-order median HU (trung vị mật độ) tại ROI
+ring3_glcm_inverse_difference,float64,GLCM Inverse Difference (độ đồng nhất texture) tại ROI
+ring3_gldm_dependence_nonuniformity,float64,GLDM Dependence NonUniformity (không đồng nhất/heterogeneity) tại ROI
+ring3_gldm_large_dependence_emphasis,float64,GLDM Large Dependence Emphasis (vùng phụ thuộc lớn) tại ROI
+ring5_firstorder_meanHU,float64,First-order mean HU (mật độ trung bình) tại ROI
+ring5_firstorder_medianHU,float64,First-order median HU (trung vị mật độ) tại ROI
+ring5_glcm_inverse_difference,float64,GLCM Inverse Difference (độ đồng nhất texture) tại ROI
+ring5_gldm_dependence_nonuniformity,float64,GLDM Dependence NonUniformity (không đồng nhất/heterogeneity) tại ROI
+ring5_gldm_large_dependence_emphasis,float64,GLDM Large Dependence Emphasis (vùng phụ thuộc lớn) tại ROI
+intra_shape_sphericity,float64,Shape: sphericity (độ tròn) - intratumoral
+intra_shape_compactness,float64,Shape: compactness (độ gọn) - intratumoral
