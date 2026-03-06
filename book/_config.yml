@@ -1,11 +1,11 @@
-title: EGFR Radiomics — Biostatistics & Predictive Modeling (5-day bootcamp)
-author: Tài liệu học tập
+title: EGFR Radiomics — Biostatistics & Machine Learning (Mini Bootcamp)
+author: Course Website
 logo: ''
 only_build_toc_files: true
 execute:
   execute_notebooks: 'off'
 repository:
-  url: https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME
+  url: https://github.com/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp
   branch: main
 launch_buttons:
   colab_url: https://colab.research.google.com
@@ -15,8 +15,9 @@ html:
   use_repository_button: true
   use_issues_button: false
   home_page_in_navbar: true
+  use_edit_page_button: false
 sphinx:
   config:
     html_theme_options:
-      repository_url: https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME
+      repository_url: https://github.com/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp
       use_repository_button: true

@@ -1,27 +1,35 @@
-# EGFR Radiomics — Mini Bootcamp 5 buổi
+# EGFR Radiomics — Mini Bootcamp (Course Website)
+This repository is a teaching website (like an online textbook) for high-school students.
 
-Repository này là website học tập dạng Jupyter Book phục vụ nhóm học sinh THPT chuẩn bị dự án EGFR radiomics.
+## Publish the website (recommended: GitHub Desktop)
+### 1) Create a GitHub repo
+- Repo name: `EGFR-Radiomics-MiniBootcamp` (recommended, so everything works out-of-the-box)
+- Visibility: `Public` (GitHub Pages is free for public repos)
 
-Mục tiêu của phiên bản 5 buổi:
-- đi đúng flow của báo cáo nghiên cứu
-- giữ phần code ở mức học sinh có thể hiểu và chạy trên Colab
-- mỗi buổi đều có sản phẩm cụ thể sau khi chạy notebook
-- vẫn giữ độ chi tiết của bộ 20 bài, nhưng gói lại theo 5 chặng rõ ràng
+### 2) Push the files from your computer
+- Install GitHub Desktop
+- Clone the empty repo `EGFR-Radiomics-MiniBootcamp` to your computer
+- Copy all files in this folder into that repo folder
+- In GitHub Desktop:
+  - Commit message: `Initial course website`
+  - Push / Publish
 
-## Cấu trúc học tập
+### 3) Turn on GitHub Pages
+On GitHub.com:
 
-1. Day 01 — Descriptive statistics cho cohort 200 bệnh nhân
-2. Day 02 — ML performance: ROC AUC, confusion matrix, so sánh intra và ring
-3. Day 03 — Stability analysis: CV, bootstrap, leakage
-4. Day 04 — NGS pathway delta P: mean, median, p value theo pathway
-5. Day 05 — Capstone: ghép toàn bộ flow, tạo bảng và hình cuối cùng bằng code
+- Repo → `Settings` → `Pages`
+- Source: `GitHub Actions`
+- Wait for the workflow to finish (green ✅ in the `Actions` tab)
 
-## Dữ liệu trong repo
+Your site will be available at:
 
-- `data/nsclc_egfr_radiomics_simplified.csv`: cohort demo 200 bệnh nhân
-- `data/ngs_pathway_demo_64.csv`: subset demo 64 bệnh nhân cho phân tích pathway
-- dữ liệu demo được dùng để học luồng code; khi áp dụng dữ liệu thật thì thay file nhưng giữ cùng logic
+`https://ketnoimaytinh797-dotcom.github.io/EGFR-Radiomics-MiniBootcamp/`
 
-## Mở website
+## Notes
+- This repo already contains a workflow that builds the Jupyter Book and deploys to GitHub Pages: `.github/workflows/deploy.yml`.
+- If you change the repo name, also update it in `book/_config.yml` and in the notebook variables `GITHUB_USER` / `REPO_NAME`.
+- The website is organized as a 5-day mini bootcamp, but the detail level follows the original 20-day learning track.
 
-Sau khi bật GitHub Pages bằng GitHub Actions, website sẽ có giao diện Jupyter Book và tự có liên kết Previous / Next ở cuối trang.
+## Teacher materials
+- Slides: `book/_static/slides/`
+- Solutions: `teacher_solutions.zip` (also copied into the website static folder)
