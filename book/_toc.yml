@@ -1,12 +1,20 @@
 format: jb-book
 root: intro
 
-chapters:
-  - file: setup
-  - file: syllabus
-  - file: day01
-  - file: day02
-  - file: day03
-  - file: day04
-  - file: day05
-  - file: radiomics_pipeline_demo
+parts:
+  - caption: Getting Started
+    chapters:
+      - file: setup
+      - file: syllabus
+
+  - caption: Mini Bootcamp 5 buoi
+    chapters:
+      - file: day01
+      - file: day02
+      - file: day03
+      - file: day04
+      - file: day05
+
+  - caption: Appendix
+    chapters:
+      - file: radiomics_pipeline_demo
