@@ -1,0 +1,4 @@
+Day 04
+Top pathway PI3K
+Delta median P 0.233
+Delta mean P 0.159

@@ -1,0 +1,5 @@
+Day 01
+Cohort 200
+EGFR positive 45.5 percent
+Age mean 60.4
+Tumor median 35.5 mm

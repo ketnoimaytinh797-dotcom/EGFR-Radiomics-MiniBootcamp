@@ -1,0 +1,2 @@
+Day 05
+Students should export roi_results.csv, cv_results.csv, pathway_results.csv, and a short summary_note.txt.
