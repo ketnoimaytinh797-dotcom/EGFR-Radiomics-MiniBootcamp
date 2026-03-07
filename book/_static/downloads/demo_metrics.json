@@ -1,0 +1,117 @@
+{
+  "cohort_n": 200,
+  "egfr_positive_pct": 45.5,
+  "age_mean": 60.4,
+  "age_sd": 14.0,
+  "tumor_size_median": 35.5,
+  "tumor_size_iqr": [
+    28.2,
+    41.8
+  ],
+  "roi_results": {
+    "intra": {
+      "auc": 0.694,
+      "brier": 0.226,
+      "sensitivity": 0.957,
+      "specificity": 0.333,
+      "threshold": 0.16,
+      "accuracy": 0.62
+    },
+    "ring1": {
+      "auc": 0.815,
+      "brier": 0.192,
+      "sensitivity": 0.87,
+      "specificity": 0.741,
+      "threshold": 0.283,
+      "accuracy": 0.8
+    },
+    "ring3": {
+      "auc": 0.747,
+      "brier": 0.216,
+      "sensitivity": 0.87,
+      "specificity": 0.593,
+      "threshold": 0.207,
+      "accuracy": 0.72
+    },
+    "ring5": {
+      "auc": 0.747,
+      "brier": 0.214,
+      "sensitivity": 0.609,
+      "specificity": 0.815,
+      "threshold": 0.429,
+      "accuracy": 0.72
+    }
+  },
+  "cv_auc_mean": 0.81,
+  "cv_auc_sd": 0.057,
+  "bootstrap_auc_mean": 0.816,
+  "bootstrap_ci": [
+    0.687,
+    0.923
+  ],
+  "leakage_demo_wrong_auc": 0.785,
+  "leakage_demo_right_auc": 0.547,
+  "top_pathway": "PI3K",
+  "pathway_table": [
+    {
+      "pathway": "PI3K",
+      "n_mut": 24,
+      "n_wt": 40,
+      "median_mut": 0.612,
+      "median_wt": 0.378,
+      "delta_median_p": 0.233,
+      "mean_mut": 0.569,
+      "mean_wt": 0.411,
+      "delta_mean_p": 0.159,
+      "mannwhitney_p": 0.084
+    },
+    {
+      "pathway": "Cell_cycle",
+      "n_mut": 24,
+      "n_wt": 40,
+      "median_mut": 0.482,
+      "median_wt": 0.387,
+      "delta_median_p": 0.096,
+      "mean_mut": 0.493,
+      "mean_wt": 0.457,
+      "delta_mean_p": 0.037,
+      "mannwhitney_p": 0.662
+    },
+    {
+      "pathway": "DNA_repair",
+      "n_mut": 19,
+      "n_wt": 45,
+      "median_mut": 0.482,
+      "median_wt": 0.426,
+      "delta_median_p": 0.057,
+      "mean_mut": 0.544,
+      "mean_wt": 0.439,
+      "delta_mean_p": 0.105,
+      "mannwhitney_p": 0.37
+    },
+    {
+      "pathway": "RTK_RAS",
+      "n_mut": 22,
+      "n_wt": 42,
+      "median_mut": 0.41,
+      "median_wt": 0.431,
+      "delta_median_p": -0.02,
+      "mean_mut": 0.464,
+      "mean_wt": 0.473,
+      "delta_mean_p": -0.009,
+      "mannwhitney_p": 0.871
+    },
+    {
+      "pathway": "TP53",
+      "n_mut": 28,
+      "n_wt": 36,
+      "median_mut": 0.404,
+      "median_wt": 0.437,
+      "delta_median_p": -0.032,
+      "mean_mut": 0.451,
+      "mean_wt": 0.485,
+      "delta_mean_p": -0.033,
+      "mannwhitney_p": 0.72
+    }
+  ]
+}

@@ -1,23 +1,30 @@
-title: EGFR Radiomics — Biostatistics & Machine Learning (Mini Bootcamp)
-author: Course Website
-logo: ''
-only_build_toc_files: true
+title: EGFR Radiomics — Mini Bootcamp
+author: HN Amsterdam team
+logo: ""
+
 execute:
-  execute_notebooks: 'off'
+  execute_notebooks: "off"
+
 repository:
   url: https://github.com/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp
   branch: main
+  path_to_book: book
+
 launch_buttons:
   colab_url: https://colab.research.google.com
-  notebook_interface: classic
-  thebe: false
+
 html:
-  use_repository_button: true
   use_issues_button: false
-  home_page_in_navbar: true
+  use_repository_button: true
   use_edit_page_button: false
+  use_download_button: true
+  use_fullscreen_button: true
+  home_page_in_navbar: true
+  extra_navbar: ""
+  extra_footer: "Dùng cho tự học và luyện kỹ năng đọc báo cáo phân tích"
+
 sphinx:
   config:
-    html_theme_options:
-      repository_url: https://github.com/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp
-      use_repository_button: true
+    language: vi
+    html_show_copyright: true
+    nb_execution_show_tb: true

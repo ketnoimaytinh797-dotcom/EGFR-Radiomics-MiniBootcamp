@@ -1,72 +1,53 @@
-# EGFR Radiomics — Mini Bootcamp (5 buổi)
+# EGFR Radiomics — Mini Bootcamp 5 buổi
 
-Website này được xây dựng như một course website theo phong cách Jupyter Book cho học sinh THPT. Mục tiêu là giữ đúng flow phân tích của báo cáo EGFR radiomics, nhưng rút toàn bộ nội dung về 5 buổi học có thể tự học trên Google Colab.
+Website này dùng cho học sinh THPT tự học trên Colab theo đúng luồng phân tích của báo cáo.
 
 ## Mục tiêu học tập
 
-Sau khi hoàn thành mini bootcamp, học sinh cần làm được các việc sau:
+Sau 5 buổi, học sinh cần làm được 4 việc.
 
-- đọc dữ liệu cohort 200 bệnh nhân và lập được bảng thống kê mô tả cơ bản
-- hiểu đầu vào và đầu ra của bài toán dự đoán EGFR bằng radiomics
-- chạy được pipeline train/test, ROC AUC, confusion matrix trên Colab
-- hiểu vì sao cần cross-validation, bootstrap và vì sao phải tránh leakage
-- tính và diễn giải được delta mean P, delta median P theo pathway trong subset NGS 64 bệnh nhân
-- ghép toàn bộ quy trình thành một notebook tổng hợp để xuất bảng, hình và ghi chú giải thích
+- Đọc đúng dữ liệu cohort và viết được phần mô tả dữ liệu
+- Chạy được một mô hình logistic regression theo quy trình sạch
+- Kiểm tra được độ ổn định bằng cross validation và bootstrap
+- Nối được xác suất dự đoán với phân tích pathway để đọc delta P
 
-## Đối tượng và yêu cầu đầu vào
+## Đầu vào cần có
 
-Đối tượng phù hợp:
-
-- học sinh THPT đang chuẩn bị dự án KHKT hoặc ISEF liên quan đến radiomics, ML y sinh, thống kê mô tả
-- học sinh chưa biết Python vẫn có thể học nếu đi theo đúng thứ tự của website
-
-Yêu cầu đầu vào tối thiểu:
-
-- biết mở GitHub repo và Google Colab
-- hiểu các khái niệm cơ bản như biến số, trung bình, trung vị, tỉ lệ, biểu đồ cột
-- sẵn sàng đọc giải thích trong markdown trước khi chạy code
+- Biết mở notebook trên Colab
+- Biết bấm chạy từng ô lệnh
+- Biết lưu file kết quả ra thư mục output
+- Không cần học trước Python nâng cao
 
 ## Cấu trúc chương trình
 
-Mini bootcamp gồm 5 buổi chính:
+| Buổi | Trọng tâm | Sản phẩm chính |
+|---|---|---|
+| Day 01 | Mô tả dữ liệu | Table 1 và 3 biểu đồ cơ bản |
+| Day 02 | Hiệu năng mô hình | Bảng AUC theo ROI và ROC |
+| Day 03 | Độ ổn định | 5 fold CV, bootstrap CI, ví dụ leakage |
+| Day 04 | Delta P theo pathway | Bảng pathway và 2 biểu đồ |
+| Day 05 | Ghép báo cáo | Một notebook tổng hợp và thư mục output |
 
-1. **Day 01 — Descriptive statistics**  
-   Cohort 200 bệnh nhân, Table 1, boxplot, histogram, so sánh EGFR dương tính và âm tính.
-2. **Day 02 — ML performance**  
-   Train/test split, ROC AUC, confusion matrix, so sánh intra và ring1/ring3/ring5.
-3. **Day 03 — Stability analysis**  
-   Cross-validation, bootstrap CI, leakage demonstration.
-4. **Day 04 — NGS pathway delta P**  
-   Predicted probability, merge bảng pathway 64 bệnh nhân, delta mean P, delta median P.
-5. **Day 05 — Capstone**  
-   Ghép toàn bộ flow và xuất output cuối cùng bằng code.
+## Dữ liệu dùng trong khóa học
 
-## Sản phẩm học tập
+Khóa học dùng bộ dữ liệu demo đã rút gọn.
 
-Mỗi buổi không chia thành bài tập về nhà riêng. Thay vào đó, mỗi buổi học phải tạo được sản phẩm sau bài học:
+- Cohort demo có 200 bệnh nhân
+- Tỉ lệ EGFR dương là 45.5 phần trăm
+- Có đủ nhóm intra, ring1, ring3, ring5 để so sánh
+- Có subset NGS gồm 64 bệnh nhân để làm phần pathway
 
-- file bảng `.csv`
-- hình `.png`
-- ghi chú giải thích ngắn 3–5 dòng
-- thư mục output riêng cho từng ngày
+## Cách học
 
-## Dữ liệu và đạo đức
+- Mỗi buổi gồm lý thuyết ngắn, code, kết quả demo, cách đọc kết quả
+- Học sinh nên chạy notebook theo đúng thứ tự Day 01 đến Day 05
+- Sau mỗi buổi phải lưu hình, bảng, nhận xét ngắn vào thư mục output riêng
 
-Website này dùng **dữ liệu demo công khai trong repo** để học flow phân tích. Khi chuyển sang dữ liệu thật:
+## Tài liệu tải nhanh
 
-- không đưa dữ liệu bệnh nhân thật lên repo public
-- không công khai file gốc có thông tin nhận dạng
-- chỉ thay file đầu vào, không thay logic bài học
-
-## Cách sử dụng website
-
-- đọc **Setup** trước khi học Day 01
-- đọc **Syllabus** để thấy mỗi buổi nối với phần nào trong bộ 20 buổi
-- học theo thứ tự Day 01 → Day 05
-- ở cuối mỗi trang sẽ có điều hướng **Previous / Next** khi website được build đúng bằng Jupyter Book
-
-## Slide và tài liệu tham khảo
-
-- Gói slide gốc 20 buổi: [day01_day20_slides_pack.zip](_static/slides/day01_day20_slides_pack.zip)
-- Mỗi ngày có thêm một gói slide tham khảo riêng ở đầu notebook
-- Tài liệu giáo viên: [teacher_solutions.zip](_static/teacher_solutions.zip)
+- [Slide Day 01](_static/slides/day01_slides.pptx)
+- [Slide Day 02](_static/slides/day02_slides.pptx)
+- [Slide Day 03](_static/slides/day03_slides.pptx)
+- [Slide Day 04](_static/slides/day04_slides.pptx)
+- [Slide Day 05](_static/slides/day05_slides.pptx)
+- [Teacher solutions](_static/teacher_solutions.zip)
