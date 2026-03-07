@@ -1,9 +1,7 @@
-jupyter-book
-nbclient
+jupyter-book==0.15.1
 pandas
 numpy
 matplotlib
 scikit-learn
-scipy
+seaborn
 openpyxl
-pillow
