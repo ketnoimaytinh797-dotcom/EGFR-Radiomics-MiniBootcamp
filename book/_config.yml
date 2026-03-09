@@ -27,6 +27,3 @@ sphinx:
     html_theme_options:
       repository_url: https://github.com/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp
       use_repository_button: true
-      launch_buttons:
-  colab_url: https://colab.research.google.com
-  notebook_interface: classic
