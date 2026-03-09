@@ -1,6 +1,22 @@
 # EGFR Radiomics — Mini Bootcamp 5 buổi
 
 Website này dùng cho học sinh THPT tự học trên Colab theo đúng luồng phân tích của báo cáo.
+## Mở notebook trên Colab
+
+Day01  
+https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day01.ipynb
+
+Day02  
+https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day02.ipynb
+
+Day03  
+https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day03.ipynb
+
+Day04  
+https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day04.ipynb
+
+Day05  
+https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day05.ipynb
 
 ## Mục tiêu học tập
 
