@@ -1,40 +1,44 @@
 # Setup
 
-Trang này hướng dẫn mở notebook trên Colab và đọc đúng cấu trúc repo.
-
 ## Cách mở notebook trên Colab
 
 1. Vào website của khóa học
-2. Chọn buổi đang học
-3. Mở link Colab tương ứng
-4. Chạy lần lượt từ trên xuống dưới
+2. Chọn buổi đang học ở menu bên trái
+3. Bấm link Open in Colab của buổi đó
+4. Chọn File rồi lưu một bản vào Google Drive
+5. Chạy lần lượt từ trên xuống
 
 ## Link mở trực tiếp trên Colab
 
-- Day 01: [Open in Colab](https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day01.ipynb)
-- Day 02: [Open in Colab](https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day02.ipynb)
-- Day 03: [Open in Colab](https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day03.ipynb)
-- Day 04: [Open in Colab](https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day04.ipynb)
-- Day 05: [Open in Colab](https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day05.ipynb)
-- Appendix: [Open in Colab](https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/radiomics_pipeline_demo.ipynb)
+- Day 01  [Open in Colab](https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day01.ipynb)
+- Day 02  [Open in Colab](https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day02.ipynb)
+- Day 03  [Open in Colab](https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day03.ipynb)
+- Day 04  [Open in Colab](https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day04.ipynb)
+- Day 05  [Open in Colab](https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day05.ipynb)
+- Appendix  [Open in Colab](https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/radiomics_pipeline_demo.ipynb)
 
-## Cấu trúc repo
+## Cách chạy một buổi
 
-- `book/` chứa toàn bộ nội dung website
-- `data/` chứa dữ liệu demo
-- `book/_static/slides/` chứa slide của từng buổi
-- `teacher_solutions.zip` là tài liệu nội bộ cho giáo viên
+- chạy cell import và cell đọc dữ liệu trước
+- sau đó chạy lần lượt từng bước từ trên xuống
+- với cell vẽ hình thì chờ hình hiện ra rồi mới chuyển tiếp
+- cuối buổi đọc phần kết quả và sản phẩm sau bài học
 
-## Cách lưu sản phẩm sau mỗi buổi
+## Cấu trúc thư mục chính
 
-- Lưu một bản notebook trên Google Drive
-- Xuất hình và bảng nếu buổi học yêu cầu
-- Ghi lại 3 ý chính sau mỗi buổi
+- data chứa CSV demo
+- book chứa nội dung Jupyter Book
+- book/_static/slides chứa slide từng buổi
+- book/_static/results chứa kết quả demo đã tạo sẵn
 
-## Mẹo khi học
+## Khi học sinh chạy trên Colab
 
-- Không cần tải dữ liệu về máy
-- Nếu Colab báo thiếu thư viện, thêm một cell đầu và chạy:
+Notebook sẽ tự đọc CSV demo từ GitHub raw link. Không cần tải dữ liệu về máy.
+
+## Nếu Colab báo thiếu thư viện
+
+Chạy cell này trước rồi chạy lại notebook.
 
 ```python
 !pip install pandas numpy matplotlib seaborn scikit-learn openpyxl
+```

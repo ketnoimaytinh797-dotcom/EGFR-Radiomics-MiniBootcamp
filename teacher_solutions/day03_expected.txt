@@ -1,7 +1,0 @@
-Day 03
-Mean CV AUC 0.81
-CV SD 0.057
-Bootstrap mean 0.816
-Bootstrap CI 0.687 to 0.923
-Leakage wrong AUC 0.785
-Leakage right AUC 0.547

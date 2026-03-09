@@ -1,0 +1,1 @@
+Cohort demo co 200 benh nhan. Ty le EGFR dot bien la 45.5 phan tram. Trong lan chia minh hoa, ROI ring1 dat AUC 0.815 va cao hon intra. Cross validation 5 fold cho mean AUC 0.810. Bootstrap 95 CI tu 0.686 den 0.925. Trong subset NGS 64 benh nhan, PI3K co delta median P 0.232.

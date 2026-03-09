@@ -1,6 +1,0 @@
-Day 02
-Best ROI ring1
-AUC ring1 0.815
-AUC intra 0.694
-AUC ring3 0.747
-AUC ring5 0.747

@@ -1,69 +1,53 @@
-# EGFR Radiomics — Mini Bootcamp 5 buổi
+# EGFR Radiomics - Mini Bootcamp
 
-Website này dùng cho học sinh THPT tự học trên Colab theo đúng luồng phân tích của báo cáo.
-## Mở notebook trên Colab
+Website này dùng cho học sinh THPT tự học trên Colab theo đúng flow của báo cáo phân tích.
 
-Day01  
-https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day01.ipynb
+## Flow của toàn bộ khóa học
 
-Day02  
-https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day02.ipynb
+![Flow phân tích](./_static/flow_radiomics_ml_deltaP.png)
 
-Day03  
-https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day03.ipynb
+Luồng chính đi theo 5 bước:
 
-Day04  
-https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day04.ipynb
+- từ ảnh CT và mask tạo vùng trong u và vùng quanh u
+- trích xuất radiomics và tạo bảng đặc trưng
+- huấn luyện mô hình để đọc ROC và AUC
+- kiểm tra độ ổn định bằng cross validation và bootstrap
+- nối với subset NGS để đọc delta P theo pathway
 
-Day05  
-https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day05.ipynb
+## Mục tiêu chung
 
-## Mục tiêu học tập
+Sau 5 buổi, học sinh cần làm được 5 việc:
 
-Sau 5 buổi, học sinh cần làm được 4 việc.
+- mô tả dữ liệu cohort
+- chạy mô hình và đọc AUC
+- kiểm tra độ ổn định bằng cross validation và bootstrap
+- đọc delta P theo pathway trên subset NGS
+- ghép kết quả thành một bộ output ngắn gọn để nói lại đúng ý của báo cáo
 
-- Đọc đúng dữ liệu cohort và viết được phần mô tả dữ liệu
-- Chạy được một mô hình logistic regression theo quy trình sạch
-- Kiểm tra được độ ổn định bằng cross validation và bootstrap
-- Nối được xác suất dự đoán với phân tích pathway để đọc delta P
+## Cấu trúc 5 buổi
 
-## Đầu vào cần có
+- Day 01  Mô tả dữ liệu và Table 1
+- Day 02  Hiệu năng mô hình và so sánh ROI
+- Day 03  Độ ổn định và leakage
+- Day 04  Delta P theo pathway NGS
+- Day 05  Ghép kết quả thành bộ output cuối
 
-- Biết mở notebook trên Colab
-- Biết bấm chạy từng ô lệnh
-- Biết lưu file kết quả ra thư mục output
-- Không cần học trước Python nâng cao
+## Bắt đầu từ đâu
 
-## Cấu trúc chương trình
+- mở trang Hướng dẫn học sinh
+- vào đúng buổi học ở menu bên trái
+- đọc phần Mục tiêu và Nội dung
+- bấm Open in Colab để chạy notebook
 
-| Buổi | Trọng tâm | Sản phẩm chính |
-|---|---|---|
-| Day 01 | Mô tả dữ liệu | Table 1 và 3 biểu đồ cơ bản |
-| Day 02 | Hiệu năng mô hình | Bảng AUC theo ROI và ROC |
-| Day 03 | Độ ổn định | 5 fold CV, bootstrap CI, ví dụ leakage |
-| Day 04 | Delta P theo pathway | Bảng pathway và 2 biểu đồ |
-| Day 05 | Ghép báo cáo | Một notebook tổng hợp và thư mục output |
+## Dữ liệu dùng trong website
 
-## Dữ liệu dùng trong khóa học
+Website dùng bộ dữ liệu demo để học sinh nhìn được đúng flow code mà không phải xử lý dữ liệu thật.
 
-Khóa học dùng bộ dữ liệu demo đã rút gọn.
+- cohort demo 200 bệnh nhân
+- subset NGS demo 64 bệnh nhân
 
-- Cohort demo có 200 bệnh nhân
-- Tỉ lệ EGFR dương là 45.5 phần trăm
-- Có đủ nhóm intra, ring1, ring3, ring5 để so sánh
-- Có subset NGS gồm 64 bệnh nhân để làm phần pathway
+## Tài liệu đi kèm
 
-## Cách học
-
-- Mỗi buổi gồm lý thuyết ngắn, code, kết quả demo, cách đọc kết quả
-- Học sinh nên chạy notebook theo đúng thứ tự Day 01 đến Day 05
-- Sau mỗi buổi phải lưu hình, bảng, nhận xét ngắn vào thư mục output riêng
-
-## Tài liệu tải nhanh
-
-- [Slide Day 01](_static/slides/day01_slides.pptx)
-- [Slide Day 02](_static/slides/day02_slides.pptx)
-- [Slide Day 03](_static/slides/day03_slides.pptx)
-- [Slide Day 04](_static/slides/day04_slides.pptx)
-- [Slide Day 05](_static/slides/day05_slides.pptx)
-- [Teacher solutions](_static/teacher_solutions.zip)
+- mỗi buổi có 1 file slide riêng
+- mỗi buổi có 1 notebook riêng
+- các hình và bảng demo đã được lưu trong thư mục results

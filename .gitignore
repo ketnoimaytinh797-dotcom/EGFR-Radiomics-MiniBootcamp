@@ -1,0 +1,4 @@
+.DS_Store
+book/_build/
+outputs/
+.ipynb_checkpoints/
