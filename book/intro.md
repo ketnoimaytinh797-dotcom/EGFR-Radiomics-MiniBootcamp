@@ -2,6 +2,13 @@
 
 Website này dùng cho học sinh THPT tự học trên Colab theo đúng flow của báo cáo phân tích.
 
+## Về phần code
+
+Trong khóa học này không cần tự viết toàn bộ code từ đầu.  
+Có thể tham khảo code mẫu từ StackOverflow, GitHub, ChatGPT, Copilot hoặc các template có sẵn.
+
+Điều quan trọng là hiểu dữ liệu, hiểu từng bước phân tích và đọc đúng kết quả.
+
 ## Flow của toàn bộ khóa học
 
 ![Flow phân tích](./_static/flow_radiomics_ml_deltaP.png)
