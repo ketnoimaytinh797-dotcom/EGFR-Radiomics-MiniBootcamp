@@ -5,9 +5,25 @@ Trang này hướng dẫn mở notebook trên Colab và đọc đúng cấu trú
 ## Cách mở notebook trên Colab
 
 1. Vào đúng website của khóa học
-2. Mở notebook của buổi đang học
-3. Bấm biểu tượng Colab ở góc trên
-4. Chạy lần lượt từ trên xuống dưới
+
+### Day 01
+[Open Day 01 in Colab](https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day01.ipynb)
+
+### Day 02
+[Open Day 02 in Colab](https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day02.ipynb)
+
+### Day 03
+[Open Day 03 in Colab](https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day03.ipynb)
+
+### Day 04
+[Open Day 04 in Colab](https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day04.ipynb)
+
+### Day 05
+[Open Day 05 in Colab](https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/day05.ipynb)
+
+### Appendix
+[Open Appendix in Colab](https://colab.research.google.com/github/ketnoimaytinh797-dotcom/EGFR-Radiomics-MiniBootcamp/blob/main/book/radiomics_pipeline_demo.ipynb) 
+
 
 ## Cấu trúc repo
 
